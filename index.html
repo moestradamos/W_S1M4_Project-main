@@ -1,0 +1,158 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+    <!DOCTYPE html>
+    <html>
+
+      <head>
+        <title>Satoshi Nakamoto</title>
+        <style>
+
+          body{
+            padding: 10px;
+          }
+
+          body {
+            background-color: black;
+
+          }
+          h3, h2 {
+            color: orange;
+            margin-bottom: 0px;
+          }
+
+          p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 0px;
+          }
+
+          h1 {
+            text-align: left;
+          }
+
+          nav {
+            text-align: center;
+          }
+
+          img{
+            width: 100%;
+            padding-top: 15px;
+            margin-bottom: 50px;
+          }
+          footer {
+          
+            text-align: center;
+            margin-top: 50px;
+          }
+         
+      
+        </style>
+
+
+      </head>
+
+      <body>
+        <header> 
+          <h1> Satoshi Nakamoto </h1> 
+          <nav>
+              <a href="#CreationOfBitcoin">Satoshi Creation of Bitcoin</a> | 
+              <a href="#NakamotosAnonymity">Nakamoto's Anonymity</a> |
+              <a href="#ExistenceofNakamoto">Nakamoto's Existence</a> |
+              <a href="#LastCommunications">Last Communications</a> |
+              <a href="#IdentityCluesandEnigma">Identity Clues and Enigma</a> |
+              <a href="#ContactForm">Contact Us</a>
+          </nav>
+        </header> 
+
+        <aside>
+          <img src = "https://en.cryptonomist.ch/wp-content/uploads/2020/04/satoshi-nakamoto-1-1.jpg" alt="this is the picture">
+          <p>
+            Satoshi Nakamoto is the anonymous individual who claims to have created Bitcoin,  
+            the world's first cryptocurrency. While there is little doubt that the person or persons who operated under the name Satoshi Nakamoto created Bitcoin, nobody knows who he, she or they might be. 
+          </p>
+        </aside>
+        <main>
+          <section id = "CreationOfBitcoin" class="section">
+            <h3>Satoshi Creation of Bitcoin</h3>
+            <p>
+              Satoshi Nakamoto authored the pivotal white paper introducing Bitcoin's theoretical framework and the decentralized payment system in October 2008.
+            </p>
+          </section>
+
+          <section id = "NakamotosAnonymity" class="section">
+            <h3>Nakamoto's Anonymity</h3>
+            <p>
+              Despite Bitcoin's immense success and widespread adoption, Nakamoto's identity remains unknown, despite being the force behind the world's leading cryptocurrency.
+            </p>
+          </section>
+
+          <section id = "ExistenceofNakamoto" class="section">
+            <h3>Existence of Nakamoto</h3>
+            <p>
+              Evidence supports the existence of a real person behind the name, based on the creation of Bitcoin's source code, publications, and various communications.
+            </p>
+          </section>
+
+          <section id = "LastCommunications" class="section">
+            <h3>Last Communications</h3>
+            <p>
+              Nakamoto's final known communication was in April 2011, signaling a departure from Bitcoin-related activities. A subsequent denial in 2014 disavowed a mistaken identity with a physicist named Dorian Nakamoto.
+            </p>
+          </section>
+
+          <section id = "IdentityCluesandEnigma" class="section">
+            <h3>Identity Clues and Enigma</h3>
+            <p>
+              Clues such as language usage and immense Bitcoin holdings hint at Nakamoto's potential background and wealth, yet his true identity remains a persistent mystery, shrouded in anonymity despite being associated with significant cryptocurrency wealth.
+            </p>
+          </section>
+        </main>
+
+        <footer>
+          <h2>Contact Us</h2>
+          <p>
+            If you have questions, insights, or if there's anything you'd like to share about Nakamoto or the world of cryptocurrencies, contact us. Your thoughts are highly valued, and I'm excited to engage in discussions about this groundbreaking technology. Let's explore the enigma of Nakamoto and the evolution of Bitcoin together!
+          </p>
+          <form id="ContactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <button type="submit">Submit</button>
+          </form>
+        </footer>
+      </body>
+      
+    </html>
